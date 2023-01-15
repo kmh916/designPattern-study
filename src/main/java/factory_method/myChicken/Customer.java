@@ -5,8 +5,13 @@ public class Customer {
         return chickenShop.serveChicken();
     }
 
-    public void eatChicken() {
+    public void eatFriedChicken() {
         Chicken chicken = orderChicken(new FriedChickenShop());
+        System.out.println(chicken);
+    }
+
+    public void eatSeasonedChicken() {
+        Chicken chicken = orderChicken(new SeasonedChickenShop());
         System.out.println(chicken);
     }
 }

@@ -1,4 +1,4 @@
-package factory_method.myChicken;
+package factory_method.velog;
 
 public class Customer {
     private Chicken orderChicken(ChickenShop chickenShop) {
@@ -10,18 +10,19 @@ public class Customer {
     }
 
     public void eatFriedChicken() {
-        Chicken chicken = orderChicken(new FriedChickenShop());
+        Chicken chicken = orderChicken(new FriedChickenFactory());
         eatChicken(chicken);
     }
 
     public void eatSeasonedChicken() {
-        Chicken chicken = orderChicken(new SeasonedChickenShop());
+        Chicken chicken = orderChicken(new SeasonedChickenFactory());
         eatChicken(chicken);
     }
 
     public static void main(String[] args) {
         Customer customer = new Customer();
         customer.eatFriedChicken();
+        System.out.println("===================================");
         customer.eatSeasonedChicken();
     }
 }

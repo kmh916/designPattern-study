@@ -9,7 +9,6 @@ import abstract_factory.product.parts.LegacyWhiteAnchor;
 import abstract_factory.product.parts.LegacyWhiteWheel;
 import abstract_factory.product.parts.WhiteAnchor;
 import abstract_factory.product.parts.WhiteWheel;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
